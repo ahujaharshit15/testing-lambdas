@@ -10,3 +10,15 @@ confirm_changeset = true
 capabilities = "CAPABILITY_IAM"
 disable_rollback = true
 image_repositories = ["HelloWorldFunction=426993854009.dkr.ecr.us-east-1.amazonaws.com/day2ffa2ff01/helloworldfunction19d43fc4repo"]
+
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "sam-3"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-oxr732qymnfk"
+s3_prefix = "sam-3"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+disable_rollback = true
+image_repositories = ["HelloWorldFunction=789978052369.dkr.ecr.us-east-1.amazonaws.com/samappharshit4b1f1b08/helloworldfunction19d43fc4repo"]
